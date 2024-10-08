@@ -8,18 +8,22 @@
 </head>
 <body>
     <div class="platform">
-        <header>
+        <header id="home">
             <h1>Jonh Doe</h1>
             <nav>
                 <ul class="nav_links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">Work</a></li>
+                    <li><button class="nav_bar" id="scroll_1">home</button></li>
+                    <li><button class="nav_bar" id="scroll_2">about</button></li>
+                    <li><button class="nav_bar" id="scroll_3">work</button></li>
+                    <li><button class="nav_bar" id="scroll_4">my services</button></li>
+                    <li><button class="nav_bar" id="scroll_5">contact</button></li>
+                    <li><a href="ResumeSample.pdf" target="_blank">
+                        <button class="nav_bar">Résumé</button></li>
                 </ul>
             </nav>
             <div><a class="cta" href="#"><button id="bot"><img src="dot.png" alt=""></button></a>
                 <a class="cta" href="#"><button id="bot"><img src="be.png" alt=""></button></a>
-                <a class="cta" href="https://x.com/?lang=en"><button id="bot"><img src="tweet.png" alt=""></button></a>
+                <a class="cta" href="#"><button id="bot"><img src="tweet.png" alt=""></button></a>
             </div>
         </header>
         <div class="frame">
@@ -56,7 +60,27 @@
             <h4>some case study</h4> <p style="font-size: 0.75em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque <br> iste dolore nisi voluptatibus. Dolor maiores, nesciunt eveniet architecto <br> mollitia, atque nemo eaque est repellat dolore corporis.</p></div>
         
     </div>
-    <h1 class="heading">contact.</h1>
+    <h1 class="heading" id="my services">My services.</h1>
+    <div class="serv">
+       <div>
+        <ul>
+            <li class="cols" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> </li>
+            <li class="cols" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> </li>
+            <li class="cols" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> </li>
+
+        </ul>
+        </div>
+       <div>
+        <ul>
+            <li class="cols" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> </li>
+            <li class="cols" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> </li>
+            <li class="cols" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> </li>
+
+        </ul></div><br><br><br><br>
+    </div>
+        
+        
+    <h1 class="heading" id="contact">contact.</h1>
     <div class="contact">
         <img src="contact.png" alt="">
         <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam. <br><br>           
@@ -65,20 +89,28 @@
             <p id="gap">behance.com/johndoe</p> <br></div>
     </div>
     <script>
-        document.getElementById('scroll1').addEventListener('click', function() {
-            document.getElementById('header1').scrollIntoView({
+        document.getElementById('scroll_1').addEventListener('click', function() {
+            document.getElementById('home').scrollIntoView({
                 behavior: 'smooth' // Enables smooth scrolling
             });
         });
-
-        document.getElementById('scroll2').addEventListener('click', function() {
+        document.getElementById('scroll_2').addEventListener('click', function() {
             document.getElementById('about').scrollIntoView({
                 behavior: 'smooth' // Enables smooth scrolling
             });
         });
-
-        document.getElementById('scroll 3').addEventListener('click', function() {
+        document.getElementById('scroll_3').addEventListener('click', function() {
             document.getElementById('work').scrollIntoView({
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        });
+        document.getElementById('scroll_4').addEventListener('click', function() {
+            document.getElementById('my services').scrollIntoView({
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        });
+        document.getElementById('scroll_5').addEventListener('click', function() {
+            document.getElementById('contact').scrollIntoView({
                 behavior: 'smooth' // Enables smooth scrolling
             });
         });
